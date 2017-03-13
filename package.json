@@ -1,0 +1,14 @@
+{
+  "name": "andela-bootcamp-1",
+  "version": "1.0.0",
+  "description": "homeStudy-Test-Day1",
+  "main": "app\\library.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test\\test.js"
+  },
+  "author": "Ajaps Franklin",
+  "license": "ISC"
+}
