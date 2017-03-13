@@ -10,5 +10,13 @@
     "test": "test\\test.js"
   },
   "author": "Ajaps Franklin",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framky007/Andela-BootCamp-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/framky007/Andela-BootCamp-1/issues"
+  },
+  "homepage": "https://github.com/framky007/Andela-BootCamp-1#readme"
 }
