@@ -36,3 +36,55 @@ function dataTypes(myData) {
             return "no value";
     }
 }
+
+
+//FUNCTION to generate Prime numbers from 2 to N
+function getPrimes(myData) {
+if (typeof(myData) != "number")
+    return "invalid input";
+
+    else if(myData ==0)
+        return "input is 0";
+
+    else if(myData < 2)
+        return [];
+
+    else if(myData == 2)
+        return [2];
+    
+    else if(myData%1 !=0)
+    return "invalid input";
+
+    else if(typeof(myData) == "number"){
+       // try{
+        var myArray =[];
+        myArray.length=myData;
+        mySRoot = Math.sqrt(myData);
+        //i=2
+        //while(i<mySRoot){
+        for(i=2; i<mySRoot; i++)
+            if (typeof(myArray[i]) == "undefined"){
+                 var p=0;
+                j=i*i +(p*i);
+                while(j < myData){
+                      myArray[j] = 0;
+                     j=i*i +(++p*i);
+                 }
+            }
+            /*
+            if(i%2==0)
+                i+=1;
+            else i+=2;
+        }//End of WHILE
+        */
+         var finalP=[2];
+         for(i=3; i<=myData; i=i+2){
+              if(myArray[i]!=false)
+                finalP.push(i);
+        }
+     return finalP;
+    }
+//}catch(err){}
+
+return "Invalid input";
+}
