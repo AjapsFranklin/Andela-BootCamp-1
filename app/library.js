@@ -38,6 +38,7 @@ function dataTypes(myData) {
 }
 
 
+
 //FUNCTION to generate Prime numbers from 2 to N
 function getPrimes(myData) {
 if (typeof(myData) != "number")
@@ -88,3 +89,9 @@ if (typeof(myData) != "number")
 
 return "Invalid input";
 }
+
+
+module.exports = {
+    dataTypes: dataTypes,
+    myPrime:getPrimes
+};
