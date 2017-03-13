@@ -21,8 +21,6 @@ function dataTypes(myData) {
         case "object":
             myObject = Object.prototype.toString.call(myData).split(" ")[1];
             myObject = myObject.substring(0, myObject.length - 1);
-            
-            console.log(myObject);
 
             if (myData == null) return "no value";
 
